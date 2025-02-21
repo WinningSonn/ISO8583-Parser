@@ -1,0 +1,56 @@
+ISO0260000100200B238840128A18018000000001400009C010030000000123400100301455100741908455110031003051011
+371889800000800109=28127010000000035005000000003903CVRUD001        DUMMY DOMESTICPURCHASEJAKARTA PUSATID 62027005111111111       00000000360016BCA2PRO1+0000000019BCA2    031000000001122222222222160000000080006075020                    009003423001012C B24 B24 12038000000000000000520-9020 (8 LINES)  000?
+
+Header(n12):ISO026000010
+MTI(n4):0200
+
+Bitmap(n16) ->	B238840128A18018
+1011001000111000100001000000000100101000101000011000000000011000 (Hex to Binary)
+1. Bitmap 2(n16) -> 000000001400009C
+0000000000000000000000000000000000010100000000000000000010011100 (Hex to Binary)
+
+3. Processing Code(n6) -> 010030
+
+4. Amount Transaction(n12) -> 000000123400
+
+7. Transmission date & time(n10) -> 1003014551
+
+11. System trace audit number (STAN)(n6) -> 007419
+
+12. Local transaction time (hhmmss)(n6) -> 084551
+
+13. Local transaction date (MMDD)(n4) -> 1003
+
+17. Capture date(n4) -> 1003
+
+22. Point of service entry mode(n3) -> 051
+
+32. Acquiring institution identification code(n..11) -> 01 : 1
+
+35. Track 2 data(z..37) -> 37 : 1889800000800109=28127010000000035005
+
+37. Retrieval reference number(an 12) -> 000000003903
+
+41. Card acceptor terminal identification(ans 8) -> CVRUD001
+
+43. Card acceptor name/location(ans 40) -> DUMMY DOMESTICPURCHASEJAKARTA PUSATID 62
+
+48. Additional data (private)(an...999) -> 027 : 005111111111       00000000
+
+49. Currency code, settlement(a or n 3) -> 360
+
+60. Reserved (national)Settlement Request(ans...999) -> 016 : BCA2PRO1+0000000
+
+61. Reserved(private) service code(ans...999) ->019 -> BCA2    03100000000
+
+100. Receiving institution identification code(n..11) -> 11 : 22222222222
+
+102. Account identification 1(ans..28) -> 16 : 0000000080006075
+
+121. Reserved for private use(ans...999) -> 020 :
+
+124. Reserved for private use(ans...999) -> 009 : 003423001
+
+125. Reserved for private use(ans...999) -> 012 : C B24 B24 12
+
+126. Reserved for private use(ans...999) -> 038 : 000000000000000520-9020 (8 LINES)  000
