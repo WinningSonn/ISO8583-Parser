@@ -1,3 +1,5 @@
+package org.example
+
 class Fields {
     fun getFieldDetails(): Map<Int, FieldDetail> {
         return mapOf(
