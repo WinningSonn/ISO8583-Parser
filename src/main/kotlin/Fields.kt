@@ -54,7 +54,7 @@ class Fields {
             49 to FieldDetail("Currency Code, Transaction", FieldDefinition("ALPHA", 3)),
             50 to FieldDetail("Currency Code, Settlement", FieldDefinition("ALPHA", 3)),
             51 to FieldDetail("Currency Code, Cardholder Billing", FieldDefinition("ALPHA", 3)),
-            52 to FieldDetail("Personal Identification Number Data", FieldDefinition("BINARY", 64)),
+            52 to FieldDetail("Personal Identification Number Data", FieldDefinition("BINARY", 16)),
             53 to FieldDetail("Security Related Control Information", FieldDefinition("NUMERIC", 16)),
             54 to FieldDetail("Additional Amounts", FieldDefinition("LLLVAR", 120)),
             55 to FieldDetail("ICC Data - EMV Multiple Tags", FieldDefinition("LLLVAR", 999)),
@@ -66,7 +66,7 @@ class Fields {
             61 to FieldDetail("Reserved (Private)", FieldDefinition("LLLVAR", 999)),
             62 to FieldDetail("Reserved (Private)", FieldDefinition("LLLVAR", 999)),
             63 to FieldDetail("Reserved (Private)", FieldDefinition("LLLVAR", 999)),
-            64 to FieldDetail("Message Authentication Code (MAC)", FieldDefinition("BINARY", 64)),
+            64 to FieldDetail("Message Authentication Code (MAC)", FieldDefinition("BINARY", 16)),
             65 to FieldDetail("Extended Bitmap Indicator", FieldDefinition("BINARY", 1)),
             66 to FieldDetail("Settlement Code", FieldDefinition("NUMERIC", 1)),
             67 to FieldDetail("Extended Payment Code", FieldDefinition("NUMERIC", 2)),
@@ -98,7 +98,7 @@ class Fields {
             93 to FieldDetail("Response Indicator", FieldDefinition("ALPHA", 5)),
             94 to FieldDetail("Service Indicator", FieldDefinition("ALPHA", 7)),
             95 to FieldDetail("Replacement Amounts", FieldDefinition("NUMERIC", 42)),
-            96 to FieldDetail("Message Security Code", FieldDefinition("BINARY", 64)),
+            96 to FieldDetail("Message Security Code", FieldDefinition("BINARY", 16)),
             97 to FieldDetail("Net Settlement Amount", FieldDefinition("NUMERIC", 16)),
             98 to FieldDetail("Payee", FieldDefinition("ALPHANUMERIC", 25)),
             99 to FieldDetail("Settlement Institution Identification Code", FieldDefinition("LLVAR", 11)),
@@ -115,7 +115,9 @@ class Fields {
             123 to FieldDetail("Reserved for Private Use", FieldDefinition("LLLVAR", 999)),
             124 to FieldDetail("Reserved for Private Use", FieldDefinition("LLLVAR", 999)),
             125 to FieldDetail("Reserved for Private Use", FieldDefinition("LLLVAR", 999)),
-            126 to FieldDetail("Reserved for Private Use", FieldDefinition("LLLVAR", 999))
+            126 to FieldDetail("Reserved for Private Use", FieldDefinition("LLLVAR", 999)),
+            127 to FieldDetail("Reserved for Private Use", FieldDefinition("LLLVAR", 999)),
+            128 to FieldDetail("Message Authentication Code", FieldDefinition("BINARY", 16))
         )
     }
 
